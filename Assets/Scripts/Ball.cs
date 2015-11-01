@@ -143,7 +143,7 @@ public class Ball : MonoBehaviour {
 			//TODO:
 			//Ocasiona que la velocidad si sea constante, pero está evitando el salto y el efecto de chanfle es mas lento, y los pines no afectan la fuerza
 			//ballRigidBody.velocity = new Vector3(0,0,myForceMagnitude);
-			ballRigidBody.AddForce(0,0,myForceMagnitude);
+			ballRigidBody.AddForce(0,0,myForceMagnitude, ForceMode.Force);
 		}
 	
 		if(InPlay())
